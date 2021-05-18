@@ -69,7 +69,7 @@ struct imx_rpmsg_vproc {
  */
 #define REMOTE_READY_WAIT_MAX_RETRIES	500
 
-/* BTC - decrease by 512 / 16
+/* BTC - decrease by 512 / 16  */
 #define RPMSG_NUM_BUFS		(32)
 /* BTC Orig #define RPMSG_BUF_SIZE		(512)*/
 /* increase by 512 * 16 */

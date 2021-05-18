@@ -70,7 +70,11 @@ struct imx_rpmsg_vproc {
 #define REMOTE_READY_WAIT_MAX_RETRIES	500
 
 #define RPMSG_NUM_BUFS		(512)
-#define RPMSG_BUF_SIZE		(512)
+/* BTC Orig #define RPMSG_BUF_SIZE		(512)*/
+#define RPMSG_BUF_SIZE		(16384)
+
+test message  
+
 #define RPMSG_BUFS_SPACE	(RPMSG_NUM_BUFS * RPMSG_BUF_SIZE)
 #define RPMSG_VRING_ALIGN	(4096)
 #define RPMSG_RING_SIZE	((DIV_ROUND_UP(vring_size(RPMSG_NUM_BUFS / 2, \

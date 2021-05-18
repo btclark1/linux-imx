@@ -73,8 +73,6 @@ struct imx_rpmsg_vproc {
 /* BTC Orig #define RPMSG_BUF_SIZE		(512)*/
 #define RPMSG_BUF_SIZE		(16384)
 
-test message  
-
 #define RPMSG_BUFS_SPACE	(RPMSG_NUM_BUFS * RPMSG_BUF_SIZE)
 #define RPMSG_VRING_ALIGN	(4096)
 #define RPMSG_RING_SIZE	((DIV_ROUND_UP(vring_size(RPMSG_NUM_BUFS / 2, \

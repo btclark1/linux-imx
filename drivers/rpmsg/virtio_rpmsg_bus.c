@@ -151,8 +151,15 @@ struct virtio_rpmsg_channel {
  * can change this without changing anything in the firmware of the remote
  * processor.
  */
+/* BTC Orig
 #define MAX_RPMSG_NUM_BUFS	(512)
 #define MAX_RPMSG_BUF_SIZE	(512)
+
+Decrease by /16,  Increase by *16 , to keep 256KB buffer space*/
+#define MAX_RPMSG_NUM_BUFS	(32)
+#define MAX_RPMSG_BUF_SIZE	(8192)
+
+
 
 /*
  * Local addresses are dynamically allocated on-demand.

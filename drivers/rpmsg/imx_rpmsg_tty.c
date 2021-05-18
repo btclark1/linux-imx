@@ -35,8 +35,10 @@ struct rpmsgtty_port {
 static struct rpmsgtty_port rpmsg_tty_port;
 
 /* this needs to be less then (RPMSG_BUF_SIZE - sizeof(struct rpmsg_hdr)) */
-#define RPMSG_MAX_SIZE		256
-#define MSG		"hello world!"
+/* BTC Orig - #define RPMSG_MAX_SIZE		256*/
+#define RPMSG_MAX_SIZE		16384
+
+#define MSG		"hello world... from BTC!"
 
 static int rpmsg_tty_cb(struct rpmsg_device *rpdev, void *data, int len,
 						void *priv, u32 src)

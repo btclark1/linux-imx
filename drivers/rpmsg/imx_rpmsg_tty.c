@@ -17,8 +17,6 @@
 #define RPMSG_MAX_SIZE		16384
 #define MSG		"hello world... from BTC!"
 
-test error
-
 /*
  * struct rpmsgtty_port - Wrapper struct for imx rpmsg tty port.
  * @port:		TTY port data

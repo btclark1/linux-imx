@@ -13,8 +13,11 @@
 #include <linux/virtio.h>
 
 /* this needs to be less then (RPMSG_BUF_SIZE - sizeof(struct rpmsg_hdr)) */
-#define RPMSG_MAX_SIZE		256
-#define MSG		"hello world!"
+/* BTC Orig #define RPMSG_MAX_SIZE		256 */
+#define RPMSG_MAX_SIZE		16384
+#define MSG		"hello world... from BTC!"
+
+test error
 
 /*
  * struct rpmsgtty_port - Wrapper struct for imx rpmsg tty port.

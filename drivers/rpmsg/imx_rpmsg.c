@@ -81,7 +81,10 @@ static struct delayed_work rpmsg_work;
  * buffers it supports).
  */
 #define RPMSG_NUM_BUFS		(512)
-#define RPMSG_BUF_SIZE		(512)
+
+/* BTC Orig - #define RPMSG_BUF_SIZE		(512) */
+#define RPMSG_BUF_SIZE		(16368)
+
 #define RPMSG_BUFS_SPACE	(RPMSG_NUM_BUFS * RPMSG_BUF_SIZE)
 
 /*

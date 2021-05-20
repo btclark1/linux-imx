@@ -175,6 +175,9 @@ static struct virtqueue *rp_find_vq(struct virtio_device *vdev,
 
 	memset_io(rpvq->addr, 0, RPMSG_RING_SIZE);
 
+	/* BTC */
+	printf("In imx_rpmsg.c - rp_find_vq() - RPMSG_RING_SIZE = %d\n" , RPMSG_RING_SIZE);
+	
 	dev_dbg(dev, "vring%d: phys 0x%x, virt 0x%p\n",
 			index, virdev->vring[index], rpvq->addr);
 

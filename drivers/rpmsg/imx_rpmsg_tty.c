@@ -95,6 +95,9 @@ static int rpmsgtty_write(struct tty_struct *tty, const unsigned char *buf,
 	count = total;
 	tbuf = buf;
 	do {
+		/* BTC add debug */
+		pr_info("BTC - In - imx_rpmsg_tty - rpmsgtty_write- count is %d, RPMSG_MAX_SIZE is %d \n", count, RPMSG_MAX_SIZE);
+
 		/* send a message to our remote processor */
 		ret = rpmsg_send(rpdev->ept, (void *)tbuf,
 			count > RPMSG_MAX_SIZE ? RPMSG_MAX_SIZE : count);
@@ -109,8 +112,6 @@ static int rpmsgtty_write(struct tty_struct *tty, const unsigned char *buf,
 		} else {
 			count = 0;
 		}
-		/* BTC add debug */
-		pr_info("BTC - In - imx_rpmsg_tty - rpmsgtty_write- count is %d \n", count);
 		
 	} while (count > 0);
 

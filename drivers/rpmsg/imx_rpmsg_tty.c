@@ -109,6 +109,9 @@ static int rpmsgtty_write(struct tty_struct *tty, const unsigned char *buf,
 		} else {
 			count = 0;
 		}
+		/* BTC add debug */
+		pr_info("BTC - In - imx_rpmsg_tty - rpmsgtty_write- count is %d \n", count);
+		
 	} while (count > 0);
 
 	return total;

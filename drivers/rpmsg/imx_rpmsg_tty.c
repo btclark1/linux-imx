@@ -14,7 +14,8 @@
 
 /* this needs to be less then (RPMSG_BUF_SIZE - sizeof(struct rpmsg_hdr)) */
 /* BTC Orig #define RPMSG_MAX_SIZE		256 */
-#define RPMSG_MAX_SIZE		16384
+/*#define RPMSG_MAX_SIZE		16384 */
+#define RPMSG_MAX_SIZE		256
 #define MSG		"hello world... from BTC!"
 
 /*
@@ -96,7 +97,7 @@ static int rpmsgtty_write(struct tty_struct *tty, const unsigned char *buf,
 	tbuf = buf;
 	do {
 		/* BTC add debug */
-		pr_info("BTC - In - imx_rpmsg_tty - rpmsgtty_write- count is %d, RPMSG_MAX_SIZE is %d \n", count, RPMSG_MAX_SIZE);
+		/*pr_info("BTC - In - imx_rpmsg_tty - rpmsgtty_write- count is %d, RPMSG_MAX_SIZE is %d \n", count, RPMSG_MAX_SIZE); */
 
 		/* send a message to our remote processor */
 		ret = rpmsg_send(rpdev->ept, (void *)tbuf,

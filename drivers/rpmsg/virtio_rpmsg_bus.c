@@ -154,10 +154,11 @@ struct virtio_rpmsg_channel {
 /* BTC Orig
 #define MAX_RPMSG_NUM_BUFS	(512)
 #define MAX_RPMSG_BUF_SIZE	(512)
-
 Decrease by /16,  Increase by *16 , to keep 256KB buffer space*/
-#define MAX_RPMSG_NUM_BUFS	(16)
-#define MAX_RPMSG_BUF_SIZE	(16384)
+/*#define MAX_RPMSG_NUM_BUFS	(16)
+#define MAX_RPMSG_BUF_SIZE	(16384) */
+#define MAX_RPMSG_NUM_BUFS	(512)
+#define MAX_RPMSG_BUF_SIZE	(512)
 
 
 

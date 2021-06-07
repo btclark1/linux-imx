@@ -22,13 +22,13 @@
 			reg = <0 0x7e000000 0 0x1000000>;
 		};
 
-		vdev0vring0: vdev0vring0@40000000 {
+		vdev0vring0: vdev0vring0@3FFE0000 {
 			compatible = "shared-dma-pool";
 			reg = <0 0x3FFE0000 0 0x18000>;
 			no-map;
 		};
 
-		vdev0vring1: vdev0vring1@3FFE8000 {
+		vdev0vring1: vdev0vring1@3FFF8000 {
 			compatible = "shared-dma-pool";
 			reg = <0 0x3FFF8000 0 0x18000>;
 			no-map;

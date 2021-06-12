@@ -14,7 +14,7 @@
 
 /* this needs to be less then (RPMSG_BUF_SIZE - sizeof(struct rpmsg_hdr)) */
 /* BTC Orig #define RPMSG_MAX_SIZE		256 */
-#define RPMSG_MAX_SIZE		2048
+#define RPMSG_MAX_SIZE		4096
 #define MSG		"hello world... from BTC!"
 
 /*

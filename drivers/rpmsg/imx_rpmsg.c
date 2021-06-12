@@ -74,8 +74,8 @@ struct imx_rpmsg_vproc {
 /* increase by 512 * 64 */
 /*#define RPMSG_NUM_BUFS		(512) */
 /*#define RPMSG_BUF_SIZE		(512) */
-#define RPMSG_NUM_BUFS		(512)
-#define RPMSG_BUF_SIZE		(512)
+#define RPMSG_NUM_BUFS		(64)
+#define RPMSG_BUF_SIZE		(4096)
 
 
 #define RPMSG_BUFS_SPACE	(RPMSG_NUM_BUFS * RPMSG_BUF_SIZE)

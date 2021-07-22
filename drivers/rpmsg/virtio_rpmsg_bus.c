@@ -11,8 +11,6 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-
-
 #include <linux/dma-mapping.h>
 #include <linux/idr.h>
 #include <linux/jiffies.h>
